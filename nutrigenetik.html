@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Nutri̇geneti̇k</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          <br><br>Hastalıkların ve sağlıklı bireyler olmanın temelinde genler ve çevre etkileşimi söz konusudur. Beslenme önemli bir çevresel faktördür. Son zamanlarda yapılan çalışmalarda hem genetik hem beslenme alanında gelişmeler olmuştur. Bu gelişmeler, genetik varyasyonlara bağlı olarak diyet yanıtının araştırılmasına, besin öğelerinin gen ekspresyonu üzerine etkilerinin anlaşılmasına olanak vermiştir. Örneğin, aynı diyeti aynı miktarlarda aldıkları halde bireyler arası yanıtta farklılıklar olmaktadır.
+          <br><br>Özellikle kanser gelişiminde genlerin ve çevrenin etkileşimi söz konusudur. Yaklaşık 50 yıl önce Japonya’da kolon kanseri görülme sıklığı düşük iken, günümüzde İngiltere’deki görülme sıklığına ulaşmıştır. Bu durum, Japonların batılı diyete geçmesinde büyük rolü olmuştur.
+          <br><br>Bireyler arasında bulunan genetik varyasyonlar, onların besin ve besin öğesi gereksinimlerini, beslenme şekillerini ve sağlık durumlarını etkilemektedir. Bu noktadan hareketle, ‘‘Kimler kronik hastalıklara yatkındır?’’ ve ‘‘Diyet düzenlemesi sonucu kimler daha iyi yanıt verebilir?’’ soruları sorulmaya başlanmıştır.
+          <br><br>M.Ö. 99-55 yılları arasında yaşamış filozof Lucretius ‘‘Birisi için besin olan diğerleri için güçlü bir zehir olabilir.’’ sözleri ile aslında bu durumu anlatmıştır. Yani, belirli bir miktarda alım bazı bireylerde risk oluştururken, bazı bireylerde de yararlı olabilmektedir. Bu farklılıkta kısmen de olsa genetik faktörlerde etkilidir. Böylece de bireylerin genlerine uygun beslenme planı yapma gereği ortaya çıkmıştır(kişiye özel beslenme).
+          <br><br>Hastalıklarda etken olan veya besinsel ayarlama yaklaşımlarına yanıtlarını olumlu kılan genetik değişikliklerin saptanması kronik hastalıkları önleme ve tedavide özellikle beslenme uzmanlarının etkinliğini arttırması beklenmektedir.
+          <br><br>Nutrigenomik, genotipe bağımlı olarak kronik hastalıkların önlenmesi ve yönetimlerini kolaylaştıracak ve sağlık durumunu geliştirecek diyetler geliştirmede yardımcı olabilmektir. Nutrigenomik, besinleri genlerimize uygun olarak düzenlemeyi sağlamaktadır. Özellikle kalp hastalıkları, kanser, diyabet, obezite, metabolizma hastalıkları diyet-gen ilişkisine işaret etmektedirler.
+          <br><br>Bir gün içinde hücre DNA’sı yaklaşık 10.000 kez serbest radikal saldırısına uğrar ve hücre bu zedelenmeyi onarmaya çalışır. Beslenme de vücudun bu etkenlere karşı koymasında önemli bir etkendir. Yani, bazı besin bileşenleri genlerin aktivite kazanmasını ya da inaktif olmasına neden olabilmektedir.
+        </p>
+        <br><a href="articles.html" class="btn btn-lg btn-block btn-primary">Makalelere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

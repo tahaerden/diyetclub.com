@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Zayıflamak İstiyorum</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          Ergenliğin ilk dönemlerinden itibaren en uygun ağırlıkta olan bile üç beş kilogram zayıflama derdine düşer. Bu telaş ile doğru yanlış yapılan her türlü uygulama kafa karıştırır, hormon dengesini bozar. Günümüzde ZAYIFLATMA telaşına giren, sağlıklı beslenme ile ilgili fark yaratmaya çalışan diyetisyenler haricinde meslekler söz sahibi olmak için birbirleriyle yarışa girdiler.
+          <br><br>
+          Konunun uzmanı olarak yıllar içerisinde danışanlarıma verdiğim bire bir eğitimlerde gördüm ki zayıflama arzusu tükenmiyor. Ama iştah da tükenmiyor. Her kilo kaybı sonrası yaşanan sevinç ile bazen kısa dönemde bazen hemen alevlenen iştah kişiyi kendi kontrolünden çıkarıyor. Bundan sorumlu tutulan HORMONLAR söz hakkına sahip oluyor. Daha çok yedikçe daha fazla istiyor. Gözü doymuyor.
+          <br><br>
+          Biz yedikçe İnsülinin yağ artırıcı bir hormon olarak çalışmasına devam ediyor ve şekeri kana taşıyan hormon görevinin de üzerine çıkıyor ve artık bu görevini yapamaz hale geliyor. Yıllar içerisinde sürekli kilo alıp vermeler ile İnsülin direnci ve buna bağlı kilo kaybında direnç gelişmesine neden oluyor.
+          <br>Kilo sorunuyla başınız dertteyse, böyle bir sorun yaşamayan kişilere göre yiyeceğe ve yeme olayına bakışınız farklıdır. Düşünce biçiminiz, yani acıkmayı acil bir durum olarak görmek, belli bir yiyeceğe duyduğunuz istediği abartmak ve zayıf kişilerin kendilerini nasıl sınırladığını görmezden gelmek, diyet yapmanızı zorlaştırır. Bugünkü düşünceleriniz ne olursa olsun, değişimi öğrenebilirsiniz. Bunu yalnızca geçici bir süre için kilo vermek amacıyla değil, kesin olarak kilolarınızdan kurtulmak için yapabilirsiniz.
+          <br><br>
+          Dengeli bir beslenme programı hedeflemek ve bunu yaşam boyu sürdürmek ilkemiz olmalı.
+          <br>Yoksa başa çıkamayacağımız sağlık sorunları zayıflama arzusunun önüne çıkarak bizi daha fazla kitler. Nerede yanlış varsa düzeltmeye oradan başlayın inanın devamı size olumlu sonuçlarıyla yansır. Hedefinizden uzaklaşmayın. Disiplini elden bırakmayın. Mutlaka başarırsınız.....
+        </p>
+        <br><a href="articles.html" class="btn btn-lg btn-block btn-primary">Makalelere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

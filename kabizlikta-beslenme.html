@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Kabızlıkta Beslenme</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          Konstipasyon yani halk arasında kabızlık olarak bilinen barsaklarda peklik durumu; haftada 2 ve daha az tuvalete çıkma olarak tanımlanır. Bilinenin aksine düzenli barsak hareketlerine sahip bir kişinin bir gün tuvalete çıkamamış olması kabızlık sayılmaz.
+          <br><br>
+          Kabızlığın az sıvı tüketimi, yetersiz egzersiz, sürekli oturarak çalışma, hamilelik gibi birçok nedeni olabileceği gibi, beslenme ile büyük ölçüde düzeltilebilen bir sorundur. Kabızlığı önlemek için;
+          <br><br>
+          Düzenli Probiyotik alımı( kefir, probiyotik yoğurt, tuzsuz lahana turşusu,sirkeli su vb)
+          <br>Günlük su tüketimi artırılmalı
+          <br>Posalı besinlerin tüketimi artırılmalı
+          <br>Düzenli egzersiz veya yürüyüş,
+          <br>Kepek, çavdar, tam buğday ekmekleri, ekşi maya ekmeği tercih edilmeli
+          <br>Diüretik etkisi olan kahve ve çay tüketimi azaltılmalıdır.
+          <br>Şeftali, muz, elma pekliğe neden olacağından tüketimi azaltılmalı
+          <br>Kuru kayısı, kuru incir ve kuru erik tüketimi gün içerisinde ara öğünlerde artırılmalı. Bu besinleri tüketirken akşamdan suda bekletip sabah kahvaltıdan önce tüketebilir.
+          <br>Kuru gıda, fast food besinlerin tüketimi varsa azaltılmalı yemeklerimizde çorba ve sulu besinlerin olmasına özen gösterilmeli.
+          <br>Kabızlığa çözüm olarak piyasada bulunan ilaç ve bitki çayları son çare olarak kullanılabilir.
+          <br><br>
+          Beslenmenize dikkat ettiğiniz halde devam eden kronik bir kabızlık durumunuz varsa doktorunuza başvurmayı ihmal etmeyin.
+        </p>
+        <br><a href="articles.html" class="btn btn-lg btn-block btn-primary">Makalelere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Obesogenler (Endokri̇n Bozucular)</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          Son 30 yılda hemen hemen dünyanın bütün ülkelerinde aşırı kilo alımı ve obezite büyük ölçüde artmıştır. Bu durum  hayat tarzı değişiklikleri ve kazanılmış değişik alışkanlıklarla kolayca açıklanamaz. Buna daha çok sözde endokrin bozucular, obesogenler ve diğer özel faktörler yol açmıştır.
+          <br><br>
+          Amerika Birleşik Devletlerinde 150 yıl içinde obezitenin arttığı görülmektedir. Yetişkinlerin %35 ve (2-19 yaş) çocukların %17’si obezdir.  Sadece Amerika’da değil dünya çapında gelişmekte olan ülkelerde hatta evcil hayvanlarda, laboratuvar hayvanlarında ve kent farelerinde birkaç on yıldır ortalama vücut ağırlığının arttığı görülmektedir. Geçen yüzyılın ortalarından itibaren özellikle gelişmiş ülkelerde nüfusun enerji alımının artmış olması geleneksel açıklamaya göre obeziteye sebep olmaktadır. Bununla birlikte özellikle çocuklarda giderek artan hareketsiz yaşam tarzı ve yağ olarak alınan enerjinin artmasıyla sonuçlanan dengesizlik de önemlidir. Ancak bu faktörler yaşam tarzları farklı olan toplumlarda insanların kilolu ya da obez olma sıklığının neden arttığını net olarak açıklamamaktadır. Son yıllarda aşırı enerji alımı ve sınırlı fiziksel aktivite ile karakterize modern yaşam tarzı ile artan obezite prevelansındaki artış; vücudun bu durumu telafi etmekteki yetenek eksikliği ile açıklanabilir.
+          <br><br>
+          Endokrin bozucular, endokrin sistemin gelişimi ve fonksiyonunu değiştiren , ekzojen madde veya madde karışımları olarak tanımlanır. Goldman ise, endokrin bozucuları, sağlıklı bir organizmada veya onun gelecekteki neslinde endokrin sistemin çalışmasını değiştirerek, sağlık sorunlarına neden olan, dışarıdan alınan madde veya madde karışımları olarak tanımlar.Geçtiğimiz 10 yılın başından bu yana zehirli kimyasal maddelerin nüfusun obezite sıklığını artırmaya katkıda bulunabileceği ileri sürülmüştür.Obesogen terimi daha sonra çevreyi ve vücudu kirletenler dahil enerji düzenleme ve depolamaya engel olabilen kimyasal maddeleri belirtmek için tanımlanmıştır.Bir çok Endokrin bozucularının kullanımı çok yaygındır. 2010 da yapılan bir çalışmada, yirmi dört evden, marka el çantalarında, duvar kağıtlarında, vinleks panjurlardan, seramiklerden ve elektrik süpürgelerinden alınmış tozlardan alınan örneklerde; fitalat, plastikler, PVC ürünler, hava temizleyiciler, kuru temizleme ürünleri, kişisel bakım ürünleri obezite ile ilişkili bulunmuştur.
+        </p>
+        <br><a href="articles.html" class="btn btn-lg btn-block btn-primary">Makalelere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

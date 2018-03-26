@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Tarçın</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          <br><br>Doğal olarak yetişen Lauraceae familyasından bir ağaçtır. Çin, Vietnam, Hindistan, Bangladeş'de yetişir.Klinik çalışmalar; Çin tarçınının, Seylan tarçınından daha etkili olduğunu göstermiştir.Aromatik kabuğu baharat olarak ve tıbbi amaçlarla kullanılır.
+          <br><br>Tarçının, 2004 yılında yapılan bir ön klinik çalışmada; açlık kan şekerini %18-31 oranında düşürdüğü bulunduktan sonra popülerliği hızla artmıştır.Tarçının taşıdığı maddelerin insülin reseptörlerinin hassasiyetini artırarak etki gösterdiği düşünülmektedir.
+          <br><br>Tarçının, antioksidan bileşiği metanolik ekstratların reaktif oksijen türlerini ve diğer serbest radikalleri etkili bir şekilde temizleği görülmüştür. Tarçın, gram(+) ve (-) bakterilerin sitoplazmik membranını yok ederek antimikrobiyal etki sağlamaktadır.Kansere karşı koruyucu etkisi vardır.
+          <br><br><strong>ÖNERİLEN DOZ</strong>
+          <br><br>Yemeklerle beraber veya yemekten hemen sonra alınmalıdır.
+          <br><br>Hipogisemik etkisi günlük 1 gram toz tarçınla artar. Kan gilikoz seviyesine bağlı olarak günlük doz 6 grama çıkartılabilir.Doğrudan yiyeceklere serpilerek ya da kapsül (500mg kabuk tozu taşıyan) halinde kullanılabilir. Ancak günlük doz 6 gramı geçmemelidir.
+          <br><br><strong>DİKKAT EDİLMESİ GEREKEN DURUMLAR</strong>
+          <br><br>Emziren ve hamilelerde etkinliğ tam olarak bilinmediğnden sıklıkla kullanılmaması daha uygundur.
+          <br><br>Yüksek tansiyonlu hastaların dikkatli tüketmesi gerekir.
+          <br><br>Yüksek miktarı taşikardi yapabilir.
+          <br><br>Alerjen etkisi vardır.
+          <br><br>Bazı kişilerde uykusuzluk ve depresyon benzeri etkiler gösterebilr.
+          <br><br>Kumarin içermesinden dolayı antikuagulan(kanın pıhtılaşmasını önleyen)  ilaçlarla etkileşebilir.
+        </p>
+        <br><a href="articles.html" class="btn btn-lg btn-block btn-primary">Makalelere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

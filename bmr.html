@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h1 class="display-4 color1">BMR Hesaplama</h1>
+        <h5 class="text-muted">---</h5>
+        <br><br>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col">
+        <div>Gender</div>
+        <input type="radio" name="gender" value="male" checked /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <br />
+        <br />
+        <div id="height_value">Height: (move slider)</div>
+        <input id="height" type="range" value="72" min="48" max="96" step="0.25" />
+        <div id="age_value">Age: (move slider)</div>
+        <input id="age" type="range" value="25" min="13" max="100" step="1" />
+        <br />
+        <div id="weight_value">Weight: (move slider)</div>
+        <input id="weight" type="range" value="150" min="80" max="400" step="1" />
+        <br />
+        <div id="walking_value">Walking: (move slider)</div>
+        <input id="walking" type="range" value="0" min="0" max="50" step="1" />
+        <br />
+        <div id="activity_value">Non-weightlifting exercise: (move slider)</div>
+        <input id="activity" type="range" value="0" min="0" max="50" step="1" />
+        <br />
+        <br />
+        <div id="bmr"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  function twopoints (val) {
+    return Math.round(val * 100) / 100;
+  }
+
+  $("input").on("input change", function (event) {
+    var name =  $(this).attr("id");
+    var imperial = $(this).val();
+    var centimeters = (imperial * 2.54).toString().substr(0, 5);
+
+    switch (name) {
+      case "height":
+      imperial = Math.floor(imperial / 12);
+      var inches = $(this).val() % 12;
+      imperial = imperial + "'" + inches + "\"";
+      $("#height_value").html("Height: " + imperial + " / " + centimeters + "cm");
+      break;
+      case "weight":
+      var lbs = $(this).val();
+      $("#weight_value").html("Weight: " + lbs + "lbs / " + twopoints(lbs*0.45) + "kg");
+      break;
+      case "age":
+      $("#age_value").html("Age: " + $(this).val());
+      break;
+      case "activity":
+      $("#activity_value").html("Non-weightlifting exercise: " + $(this).val() + "hrs per week");
+      break;
+      case "walking":
+      $("#walking_value").html("Walking: " + $(this).val() + "hrs per week");
+      break;
+    }
+
+    var height = parseInt($("#height").val(), 10) * 2.54;
+    var age = parseInt($("#age").val(), 10);
+    var weight = parseInt($("#weight").val(), 10) * 0.45;
+    var walking = parseInt($("#walking").val(), 10);
+    var activity = parseInt($("#activity").val(), 10);
+    var gender = $("input[name='gender']:checked").val();
+
+    var bmr = parseInt(10 * weight + 6.25 * height - 5 * age, 10) + (gender === "male" ? 5 : -161);
+    bmr = bmr * 1.2; // sedentary base
+    // metric from: http://www.runnersworld.com/peak-performance/running-v-walking-how-many-calories-will-you-burn
+    bmr += walking*60*(.03 * weight*1/0.45) / 7;
+    bmr += activity*60*(.07 * weight*1/0.45) / 7;
+    bmr = Math.floor(bmr);
+    var bmr_minus_protein = Math.floor(bmr - (0.6*weight*1/0.45*4));
+
+    $("#bmr").html("Daily target minus protein (non-workout days): <strong>" + bmr_minus_protein +"</strong><br />Daily target minus protein (workout days): <strong>" + (bmr_minus_protein+300) +"</strong>");
+  });
+  </script>
+  <script>
+  $(document).ready(function () {
+    $('html, body').hide();
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

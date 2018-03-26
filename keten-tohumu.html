@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Keten Tohumu</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          Keten tohumundaki omega-3 yağ asidi olarak bilinen alfa linoleik asittir.Balıktaki omega-3 yağ asitlerinden farklıdır, ancak kan damarları üzerinde aynı yararlı etkiye sahiptir. 
+          <br><br>
+          Keten tohumu yağı(flax seed oil) sağlığa yararlı omega-6 yağ asitlerinden linoleik asit de içerir.
+          <br><br>Kolesterol düzeyini azaltır.
+          <br><br>Fitoöstrojenden zengin olduğu için menopoz döneminde önerilir.
+          <br><br>Kalp damar hastalıklarına karşı koruyucudur.Aterosklerozu(damar sertliği)yavaşlatır ya da durdurur.
+          <br><br>Kan basıncı ayarlamasını kolaylaştırır.
+          <br><br>Kadınların fibrokistik meme hastalığında, gut hastalığında,romatizmal bağışıksal hastalıklarda iltihabı yanıtı sınırlar,eklem, kalp ve kaslardaki sorunları hafifletir.
+          <br><br>Bol miktarda if içerir.Bu nedenle kabızlığa,kalın barsak divertiküler sorununa, hemoroite karşı son derece faydalıdır.,
+          <br><br>Sedef hastalığı, güneş yanığı, rosacea,akne gibi birçok cilt sorununu hafifletir.
+          <br><br>Sağlıklı cilt ve tırnak oluşumunu destekler.
+          <br><br>Şeker hastalığı,multiple Skleroz, dejeneratif sinir sistemi hastalıkları ya da Parkinson hastalığı sonucu oluşan uyuşma ve karıncalanmayla belirginleşen sinir hasarını azaltır.
+          <br><br>Genelde günde 1 kez 1 çay kaşığı likit keten tohumu yağının ya da 1000 mg'lık kapsüllerin alınması yeterli olur.
+          <br><br>Hafif kavrulmuş taze keten tohumu öğütülerek salata veya yoğurda eklenebilir.Müsli ile tüketilebilir.
+          <br><br>Yarım fincan keten tohumu yeterlidir.
+          <br><br>Buzdolabında kapalı bir kapta saklanmalıdır.
+        </p>
+        <br><a href="articles.html" class="btn btn-lg btn-block btn-primary">Makalelere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>
