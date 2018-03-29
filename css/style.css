@@ -33,6 +33,10 @@ body{
 .bg1{
   background: #5f8dc3;
 }
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  height: 40px;
+  width: 40px;
+}
 .navbar{
   background: #f8f9fad4;
 }
@@ -229,4 +233,7 @@ footer{
 }
 footer a{
   color: #ffffff;
+}
+.abigimage-layout, .abigimage-overlay{
+  z-index: 9999;
 }
