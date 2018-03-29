@@ -1,5 +1,4 @@
 body{
-  padding-top: 97px;
   color: #333;
   font-size: 14px;
 }
@@ -236,4 +235,10 @@ footer a{
 }
 .abigimage-layout, .abigimage-overlay{
   z-index: 9999;
+}
+.uygulama2{
+    background-image:url('../img/office.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding: 20px;
 }
