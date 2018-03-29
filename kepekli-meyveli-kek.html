@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Kepekli Meyveli Kek</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          2 Su bardağı tam buğday unu,
+
+ 1/2 su bardağı esmer şeker veya 4-5yemek kaşığı pekmez,
+<br><br>
+ 3 Yumurta,1 küçük çay bardağı zeytinyağ
+<br><br>
+ 1/2 su bardağı ceviz,
+<br><br>
+ 1 Paket kabartma tozu,
+<br><br>
+ 2tatlı kaşığı  tarçın,
+<br><br>
+ 1tatlı kaşığı toz zencefil,
+<br><br>
+ 1/2 su bardağı kuru kayısı,
+<br><br>
+ 1/2 su bardağı kuru üzüm veya yaban mersini,
+<br><br>
+ 1 su bardağı süt,
+<br><br>
+ 2 paket vanilya,
+<br><br>
+ 2 Adet portakal kabuğu rendesi ve suyu,
+<br><br>
+ Yapılışı :Yumurta ve şekeri birlikte çırp. Süt,yağ,meyve suyu karıştırılır.
+<br><br>
+Una bütün kuru malzemeyi koyup karıştırılır
+<br><br>  
+Yağlanmış kek kalıbına dökülür.
+<br><br>
+ 170 derecede 50-60 dakikada pişiririlir.
+      </p>
+        <br><a href="diyet-tarifleri.html" class="btn btn-lg btn-block btn-primary">Tariflere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+<div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

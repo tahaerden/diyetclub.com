@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Havuçlu Pazı Yemeği</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          1 bağ pazı,1 küçük havuç, 1çorba kaşığı iri bulgur,1 orta boy soğan, 4 diş sarımsak,1çorba kaşığı salça, 1büyük domates,1taze kırmızı biber(arzuya göre),2 çorba kaşığı zeytinyağı,tuz,karabiber
+<br><br>
+Pazılar temizlendikten sonra sap kısımları ayrılır.ince doğranır.Soğan,havuç,sarımsak,domates ,biber doğranır bulgur , 1 çorba kaşığı zeytinyağı ve yarım su bardağı su ile hafif yumuşayıncaya kadar pişirilir.El ile parçaladığınız pazı yaprakları konur.Karıştırılır.Kısa süre pişirildikten sonra ocaktan indirilir.Kalan 1 çorba kaşığı yağ üzerine gezdirilir.
+<br><br>
+Bu yemek:(En fazla 8çorba kaşığı için) 2 porsiyon sebze+1 porsiyon yağ değişimlerini içerir.
+        </p>
+        <br><a href="diyet-tarifleri.html" class="btn btn-lg btn-block btn-primary">Tariflere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

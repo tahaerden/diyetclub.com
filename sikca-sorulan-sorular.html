@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+    <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Sıkça Sorulan Sorular</h1>
+        <h5 class="text-muted">MERAK ETTİĞİNİZ CEVAPLARI UZMAN DİYETİSYEN SONGÜL KANIMTÜRK'TEN DİNLEYİN</h5>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <iframe class="iframeVideo" frameborder="0" src="http://www.doktorsitesi.com/video/iframe/12528?s=siki-diyet-yapip-basarisiz-olunmasinin-sebebi-nedir" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+        <iframe class="iframeVideo" frameborder="0" src="http://www.doktorsitesi.com/video/iframe/12529?s=detoks-zayiflamada-etkili-midir" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+        <iframe class="iframeVideo" frameborder="0" src="http://www.doktorsitesi.com/video/iframe/12534?s=adet-oncesi-nasil-beslenmek-gerekir" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+        <iframe class="iframeVideo" frameborder="0" src="http://www.doktorsitesi.com/video/iframe/12515?s=kisin-nasil-beslenmeliyiz" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+        <iframe class="iframeVideo" frameborder="0" src="http://www.doktorsitesi.com/video/iframe/12520?s=medya-etkisi-ve-yeme-bozuklugu-arasindaki-iliski-nedir" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+        <iframe class="iframeVideo" frameborder="0" src="http://www.doktorsitesi.com/video/iframe/12521?s=kalsiyum-zayiflatir-mi" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+        <iframe class="iframeVideo" frameborder="0" src="http://www.doktorsitesi.com/video/iframe/12533?s=menopoz-donemi-ve-kemik-erimesinden-korunmak-icin-neler-yapilmalidir" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+        <iframe class="iframeVideo" frameborder="0" src="http://www.doktorsitesi.com/video/iframe/12516?s=beslenmenin-sac-dokulmesi-ve-cilt-bozukluklarina-etkisi-nedir" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+    <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

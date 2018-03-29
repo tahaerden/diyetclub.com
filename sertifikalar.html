@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/abigimage/abigimage.jquery.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Sertifikalar</h1>
+        <h5 class="text-muted">UZMAN DİYETİSYEN SONGÜL KANIMTÜRK'ÜN BAŞARILARI</h5>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/1.jpg"><img src="img/certificates/1.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/2.jpg"><img src="img/certificates/2.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/3.jpg"><img src="img/certificates/3.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/4.jpg"><img src="img/certificates/4.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/5.jpg"><img src="img/certificates/5.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/6.jpg"><img src="img/certificates/6.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/7.jpg"><img src="img/certificates/7.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/8.jpg"><img src="img/certificates/8.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/9.jpg"><img src="img/certificates/9.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/10.jpg"><img src="img/certificates/10.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/11.jpg"><img src="img/certificates/11.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/12.jpg"><img src="img/certificates/12.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/13.jpg"><img src="img/certificates/13.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/14.jpg"><img src="img/certificates/14.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/15.jpg"><img src="img/certificates/15.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/16.jpg"><img src="img/certificates/16.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/17.jpg"><img src="img/certificates/17.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+        <a class="mybox col-md-4 col-sm-12 imgPopup" href="img/certificates/18.jpg"><img src="img/certificates/18.jpg" alt="UZMAN DİYETİSYEN SONGÜL KANIMTÜRK Sertifika"></a>
+    </div>
+  </div>
+
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="plugins/abigimage/abigimage.jquery.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.imgPopup').abigimage();
+      $("#footer").load("footer.html")
+      $('html, body').hide();
+
+      if (window.location.hash) {
+        setTimeout(function() {
+          $('html, body').scrollTop(0).show();
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+          }, 1000)
+        }, 0);
+      } else {
+        $('html, body').show();
+      }
+    })
+  </script>
+</body>
+
+</html>

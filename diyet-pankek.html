@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Diyet Pankek</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          Malzemeler:
+<br><br>
+ 2 yumurta
+<br><br>
+3 yemek kaşığı tam buğday unu
+<br><br>
+200 ml yağsız süt
+<br><br>
+1 paket kabartma tozu
+<br><br>
+Yapılışı: Bütün malzemeler çırpılır. Yoğun kıvam sağlanamadı ise biraz daha un eklenebilir.
+<br><br>
+Büyük teflon tavada (tava az zeytin yağ ile yağlanır) pişirilir. Tavaya 4 ayrı kepçe dökülerek aynı anda 4 pankek pişirilir. Hamurun üzerinde küçük kabarcıklar çıkınca spatula yardımıyla ters çevirip diğer taraf kızartılır. Her pankek yaklaşık 30g olacaktır. Bu 1 porsiyon ekmek yerine iyi bir seçenek olacaktır.
+        </p>
+        <br><a href="diyet-tarifleri.html" class="btn btn-lg btn-block btn-primary">Tariflere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

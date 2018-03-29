@@ -17,29 +17,29 @@
     <div class="row text-center">
       <div class="col">
         <h1 class="display-4 color1">BMR Hesaplama</h1>
-        <h5 class="text-muted">---</h5>
+        <h5 class="text-muted">BAZAL METABOLİZMA HIZINIZI HESAPLAYIN</h5>
         <br><br>
       </div>
     </div>
     <div class="row text-center">
       <div class="col">
-        <div>Gender</div>
-        <input type="radio" name="gender" value="male" checked /> Male
-        <input type="radio" name="gender" value="female" /> Female
+        <div>Cinsiyet</div>
+        <input type="radio" name="gender" value="male" checked /> Erkek
+        <input type="radio" name="gender" value="female" /> Kadın
         <br />
         <br />
-        <div id="height_value">Height: (move slider)</div>
+        <div id="height_value">Boy:</div>
         <input id="height" type="range" value="72" min="48" max="96" step="0.25" />
-        <div id="age_value">Age: (move slider)</div>
+        <div id="age_value">Yaş:</div>
         <input id="age" type="range" value="25" min="13" max="100" step="1" />
         <br />
-        <div id="weight_value">Weight: (move slider)</div>
+        <div id="weight_value">Ağırlık:</div>
         <input id="weight" type="range" value="150" min="80" max="400" step="1" />
         <br />
-        <div id="walking_value">Walking: (move slider)</div>
+        <div id="walking_value">Yürüyüş:</div>
         <input id="walking" type="range" value="0" min="0" max="50" step="1" />
         <br />
-        <div id="activity_value">Non-weightlifting exercise: (move slider)</div>
+        <div id="activity_value">Egzersiz (Ağırlık kaldırmadan):</div>
         <input id="activity" type="range" value="0" min="0" max="50" step="1" />
         <br />
         <br />
@@ -72,20 +72,20 @@
       imperial = Math.floor(imperial / 12);
       var inches = $(this).val() % 12;
       imperial = imperial + "'" + inches + "\"";
-      $("#height_value").html("Height: " + imperial + " / " + centimeters + "cm");
+      $("#height_value").html("Boy: " + imperial + " / " + centimeters + "cm");
       break;
       case "weight":
       var lbs = $(this).val();
-      $("#weight_value").html("Weight: " + lbs + "lbs / " + twopoints(lbs*0.45) + "kg");
+      $("#weight_value").html("Ağırlık: " + lbs + "lbs / " + twopoints(lbs*0.45) + "kg");
       break;
       case "age":
-      $("#age_value").html("Age: " + $(this).val());
+      $("#age_value").html("Yaş: " + $(this).val());
       break;
       case "activity":
-      $("#activity_value").html("Non-weightlifting exercise: " + $(this).val() + "hrs per week");
+      $("#activity_value").html("Egzersiz (Ağırlık kaldırmadan): Haftada " + $(this).val() + " saat");
       break;
       case "walking":
-      $("#walking_value").html("Walking: " + $(this).val() + "hrs per week");
+      $("#walking_value").html("Yürüyüş: Haftada " + $(this).val() + " saat");
       break;
     }
 
@@ -104,7 +104,7 @@
     bmr = Math.floor(bmr);
     var bmr_minus_protein = Math.floor(bmr - (0.6*weight*1/0.45*4));
 
-    $("#bmr").html("Daily target minus protein (non-workout days): <strong>" + bmr_minus_protein +"</strong><br />Daily target minus protein (workout days): <strong>" + (bmr_minus_protein+300) +"</strong>");
+    $("#bmr").html("Günlük proteinsiz hedef (dinlenme günlerinde): <strong>" + bmr_minus_protein +"</strong><br />Günlük proteinsiz hedef (egzersiz günlerinde): <strong>" + (bmr_minus_protein+300) +"</strong>");
   });
   </script>
   <script>
