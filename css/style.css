@@ -71,6 +71,7 @@ a:hover{
 .btn-primary{
   background-color: #5f8dc3;
   border: 0;
+  padding: 12px;
 }
 li:before {
   content: "~";
@@ -93,7 +94,7 @@ li:before {
 .mybox {
   height: 300px;
   display: inline-block;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   transition: all 0.2s ease-out;
   text-align: center;
   cursor: pointer;
