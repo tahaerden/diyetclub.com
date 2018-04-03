@@ -37,7 +37,7 @@ body{
   width: 40px;
 }
 .navbar{
-  background: #f8f9fad4;
+  background: #2c3e50;
 }
 .navbar-nav{
   margin: 0px auto;
@@ -46,15 +46,16 @@ body{
   font-family: Roboto,sans-serif;
   font-size: 18px;
   line-height: 80px;
-  color: #cd2725;
+  color: #ffffff;
+  letter-spacing: 2px;
   transition: all .3s ease-out;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
-  color: #cd2725;
+  color: #ffffff;
 }
 .navbar-light .navbar-nav .nav-link:hover{
   transform: translateY(-5px);
-  color: #4a6f9a;
+  color: red;
 }
 .navbar-brand {
   margin-right: auto;
