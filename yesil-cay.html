@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+    <div id="nav"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Yeşil Çay</h1>
+        <br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+Yeşil çayın sağlık için yararlı etkileri polifenolik bileşiklerden ,özellikle de kateşinlerden, kaynaklanmaktadır.
+<br><br>Kateşinlerden ‘epigallokateşin gallat’ (EGKG) yeşil çayda en fazla bulunan kateşindir.
+<br><br>Kan akımını hızlandırmak,
+<br><br>Alkol ve toksinleri elimine etmek,
+<br><br>Hastalıklara karşı direnci artırmak,
+<br><br>Eklem ağrısını azaltmak,
+<br><br>İdrarı temizlemek ve atımını hızlandırmak İçin kullanılmıştır.
+<br><br>Sindirime yardımcı olma,
+<br><br>Kanın arıtılması,
+<br><br>Vücut regülasyonunun sağlanması,
+<br><br>Vücut ısısının düşürülmesi,
+<br><br>Diş ve kemiklerin güçlendirilmesi
+<br><br>Virüslerle savaşma,
+<br><br>Kan şeker seviyesinin düşürülmesi gibi birçok terapötik etkileri vardır.
+<br><br>Son zamanlarda araştırmalar : Kanserin önlenmesi,
+<br><br>Kardiyovasküler hastalıkların önlenmesi,
+<br><br>Obezitenin sıklığının azalmasındaki etkilerine odaklanmıştır.
+<br><br>Çay; antihipertansif, antiaterosklerotik, hipoglisemik ve hipokolesterolemik etkiye sahip antioksidan polifenolik flavonoidlerce zengindir.
+<br><br>Hayvanlarda akciğer, deri, özafagus ve gastrointestinal kanserlere karşı mükemmel bir tedavi etkisi göstermektedir.
+<br><br>Çayın hafıza ve öğrenme üzerine olumlu etkileri olduğu belirlenmiştir.
+<br><br>Ağırlık kaybı ve korumada da kateşinlerin büyük rolü vardır.
+<br><br>Çayın kansere karşı koruyuculuğu için pozitif etki olduğunu gösteren raporlar ağırlıkla yeşil çay tüketen Asya ülkelerinde görülmektedir.
+<br><br>Çoğunlukla siyah çay tüketen Avrupa ülkelerinde ise koruyucu etkiler daha seyrek olarak görülmektedir.
+        </p>
+        <br><a href="makaleler.html" class="btn btn-lg btn-block btn-primary">Makalelere Geri Dön</a><br>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+  $(document).ready(function () {
+    $("#footer").load("footer.html")
+    $('html, body').hide();
+
+    if (window.location.hash) {
+      setTimeout(function() {
+        $('html, body').scrollTop(0).show();
+        $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top
+        }, 1000)
+      }, 0);
+    }
+    else {
+      $('html, body').show();
+    }
+  })
+  </script>
+</body>
+</html>

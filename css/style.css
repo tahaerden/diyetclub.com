@@ -46,7 +46,7 @@ body{
   font-family: Roboto,sans-serif;
   font-size: 18px;
   line-height: 80px;
-  color: #5f8dc3;
+  color: #cd2725;
   transition: all .3s ease-out;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
