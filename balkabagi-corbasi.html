@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Balkabağı Çorbası</h1>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <ul>
+          <li>1 dilim balkabağı (doğranmış)</li>
+          <li>1 küçük kereviz (doğranmış)</li>
+          <li>1/2 çay bardağı mercimek</li>
+          <li>1 büyük soğan</li>
+          <li>2 diş sarımsak</li>
+          <li>1 dolu tatlı kaşığı zerdeçal</li>
+          <li>Az muskat rendesi</li>
+          <li>1 çay kaşığı zencefil</li>
+          <li>Et suyu (1 su bardağı)</li>
+        </ul>
+        <p>
+          Bütün malzemeler tencerede 1,5lt su ile pişirilir. Blenderdan geçirilir. Üzerine karabiber ve maydonoz serpilir.
+        </p>
+      </div>
+      <br>
+      <a href="diyet-tarifleri.html" class="btn btn-lg btn-block btn-primary">Tariflere Geri Dön</a>
+      <br>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#footer").load("footer.html")
+      $('html, body').hide();
+
+      if (window.location.hash) {
+        setTimeout(function() {
+          $('html, body').scrollTop(0).show();
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+          }, 1000)
+        }, 0);
+      } else {
+        $('html, body').show();
+      }
+    })
+  </script>
+</body>
+</html>
