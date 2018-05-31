@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diyet Club Uzm. Dyt. Songül Kanımtürk</title>
+</head>
+<body class="slimscroll">
+
+  <div id="nav"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4 color1">Zayıflama Programı ile Yaza Merhaba</h1>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-justify">
+        <p>
+          Kışın görmezden geldiğimiz kilolar, yazın gelişiyle sorun olmaya başlar. Aslında kışlık ve yazlık kilo mücadelesi yerine daima kontrollü olmak son dakikaya bırakmamak daha önemlidir. Acilen zayıflama telaşı yaza formda girmenizi sağlayabilir ama kalıcılığı
+          ile ilgili önlemler de unutulmamalıdır.
+          <br>
+          <br>Öncelikle2-3 litre su içmeyi unutmayın. Şekerli, gazlı, kolalı soğuk içecekler yerine; suyunuza katacağınız mevsim meyveleriyle hem görüntüsü hem aroması su içme isteğinizi artıracaktır.
+          <br>
+          <img src="img/articles/cilekli-su.jpg" alt="Çilekli su">
+          <br>İlkbahar ve yaz sebzeleri enginar, domates, biber, kabak, salatalık, patlıcan, bamya, taze fasulye, barbunya, börülce, semizotu, ıspanak, yabani otlar hem hazırlama kolaylığı hem tüketirken bize verdiği ferahlık sayesinde sofralarımızın baş
+          tacı olmalı. Sebzelerinizi mümkün olduğunca az pişirin. Bol bol salata yapıp içine proteinden zengin kuru baklagiller ile veya yumurta, birkaç parça et, peynir çeşitleri ekleyerek daha doyurucu bir hale getirebilirsiniz. Sebze ve meyveleri farklı
+          renklerde tüketmeye gayret edin. Renkler meyve ve sebzelerin içerdikleri güçlü antioksidanların göstergesidir. Güneşin zararlı etkilerine karşı da kalkan görevi vardır.
+          <br>
+          <br>Pişirme yönteminiz çok sağlıklı bir besinin dahi size zarar vermesine neden olabilir. Besinlerinizi tencere usulü-haşlayarak, fırında veya ızgara yaparak hazırlayın. Et, tavuk ve balık tüketirken kızartmadan kaçının. Et ürünlerini yanında bol
+          sebze ile tüketin.
+          <br>
+          <br>Yaz aylarının en sevilen tatlısı dondurmayı 1 topdan fazla yemeyin. Doğal ve az şekerli olanları tercih edin. 1 top dondurmayı 1 porsiyon meyve yerine tüketin.
+          <br>
+          <br>Günde 3-4 öğün yeterli olacaktır. Acıkmadan yemek yemeyin. Özellikle deniz kenarında sıcak saatlerde hafif beslenin. Çoğu kez 1 kase yoğurt içine doğranmış mevsim meyveleri, 3-4 parça ceviz,fındık, badem gibi çiğ kuruyemiş,1 yemek kaşığı keten
+          tohumu veya chia tohumu sizi 2-3 saat tok tutmaya yetecektir.
+          <br>
+          <br>Hamur işlerinden, pastane ürünlerinden uzak durarak ve bunu yeni beslenme alışkanlığı haline getirerek, yaza özel değil her zaman formada kalmanız mümkün.
+          <br>
+          <br>Yaz aylarının en önemli besin kaynağı güneşin özellikle sabah ışıkları. D vitamini depolarınızı dolduran yaz güneşinden faydalanmak dışarıdan aldığımız besinlerin vücudumuzda kullanımını kolaylaştıracağını unutmayın.
+        </p>
+        <br>
+        <a href="makaleler.html" class="btn btn-lg btn-block btn-primary">Makalelere Geri Dön</a>
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/include.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#footer").load("footer.html")
+      $('html, body').hide();
+
+      if (window.location.hash) {
+        setTimeout(function() {
+          $('html, body').scrollTop(0).show();
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top
+          }, 1000)
+        }, 0);
+      } else {
+        $('html, body').show();
+      }
+    })
+  </script>
+</body>
+</html>
